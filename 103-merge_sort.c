@@ -1,10 +1,5 @@
 #include "sort.h"
 
-void merge_subA(int *subA, int *buff, size_t front, size_t mid,
-		size_t back);
-void mrg_sort_recurs(int *subA, int *buff, size_t front, size_t back);
-void merge_sort(int *array, size_t size);
-
 /**
  * merge_subA - Sort a subA of integers.
  * @subA: A subA of an array of integers to sort.
