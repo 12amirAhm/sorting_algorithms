@@ -1,9 +1,5 @@
 #include "sort.h"
 
-void swap_ints(int *a, int *b);
-void mx_heap(int *array, size_t size, size_t base, size_t root);
-void heap_sort(int *array, size_t size);
-
 /**
  * swap_ints - Swap two integers in an array.
  * @a: first integer to swap.
