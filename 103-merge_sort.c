@@ -51,8 +51,8 @@ void mrg_sort_recurs(int *subA, int *buff, size_t front, size_t back)
 	if (back - front > 1)
 	{
 		mid = front + (back - front) / 2;
-		merge_sort_recursive(subA, buff, front, mid);
-		merge_sort_recursive(subA, buff, mid, back);
+		mrg_sort_recurs(subA, buff, front, mid);
+		mrg_sort_recurs(subA, buff, mid, back);
 		merge_subA(subA, buff, front, mid, back);
 	}
 }
@@ -76,7 +76,7 @@ void merge_sort(int *array, size_t size)
 	if (buff == NULL)
 		return;
 
-	merge_sort_recursive(array, buff, 0, size);
+	mrg_sort_recurs(array, buff, 0, size);
 
 	free(buff);
 }
